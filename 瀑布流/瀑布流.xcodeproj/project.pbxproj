@@ -12,9 +12,15 @@
 		923ABECC1E60835700AD7572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923ABECA1E60835700AD7572 /* Main.storyboard */; };
 		923ABECE1E60835700AD7572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923ABECD1E60835700AD7572 /* Assets.xcassets */; };
 		923ABED11E60835700AD7572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923ABECF1E60835700AD7572 /* LaunchScreen.storyboard */; };
+		926BF67E1E6569E9006BD556 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926BF67C1E6569E9006BD556 /* ShopCell.swift */; };
+		926BF67F1E6569E9006BD556 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926BF67D1E6569E9006BD556 /* ShopCell.xib */; };
+		926BF6811E656A74006BD556 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926BF6801E656A74006BD556 /* ShopItem.swift */; };
+		926BF6831E656A98006BD556 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 926BF6821E656A98006BD556 /* 1.plist */; };
+		CB92781009281A23EE9B08E6 /* Pods____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0C05C3DD338331A1545E96 /* Pods____.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F9DFDB88F92906418A9E567 /* Pods-瀑布流.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流.release.xcconfig"; sourceTree = "<group>"; };
 		923ABEC31E60835700AD7572 /* 瀑布流.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瀑布流.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		923ABEC61E60835700AD7572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923ABEC81E60835700AD7572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		923ABECD1E60835700AD7572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923ABED01E60835700AD7572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923ABED21E60835700AD7572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926BF67C1E6569E9006BD556 /* ShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		926BF67D1E6569E9006BD556 /* ShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		926BF6801E656A74006BD556 /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		926BF6821E656A98006BD556 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		B579A7FCF4A92194D60D15CD /* Pods-瀑布流.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0C05C3DD338331A1545E96 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB92781009281A23EE9B08E6 /* Pods____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				923ABEC51E60835700AD7572 /* 瀑布流 */,
 				923ABEC41E60835700AD7572 /* Products */,
+				C0086E6615D18765238BBC9B /* Pods */,
+				E051DF46D057D61AF00F9DE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +71,33 @@
 			children = (
 				923ABEC61E60835700AD7572 /* AppDelegate.swift */,
 				923ABEC81E60835700AD7572 /* ViewController.swift */,
+				926BF67C1E6569E9006BD556 /* ShopCell.swift */,
+				926BF67D1E6569E9006BD556 /* ShopCell.xib */,
+				926BF6801E656A74006BD556 /* ShopItem.swift */,
 				923ABECA1E60835700AD7572 /* Main.storyboard */,
 				923ABECD1E60835700AD7572 /* Assets.xcassets */,
 				923ABECF1E60835700AD7572 /* LaunchScreen.storyboard */,
+				926BF6821E656A98006BD556 /* 1.plist */,
 				923ABED21E60835700AD7572 /* Info.plist */,
 			);
 			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		C0086E6615D18765238BBC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B579A7FCF4A92194D60D15CD /* Pods-瀑布流.debug.xcconfig */,
+				1F9DFDB88F92906418A9E567 /* Pods-瀑布流.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E051DF46D057D61AF00F9DE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C05C3DD338331A1545E96 /* Pods____.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923ABED51E60835700AD7572 /* Build configuration list for PBXNativeTarget "瀑布流" */;
 			buildPhases = (
+				69929A9F101757BF80BA18B1 /* [CP] Check Pods Manifest.lock */,
 				923ABEBF1E60835700AD7572 /* Sources */,
 				923ABEC01E60835700AD7572 /* Frameworks */,
 				923ABEC11E60835700AD7572 /* Resources */,
+				76C4F0A8A190EE5D9997BE13 /* [CP] Embed Pods Frameworks */,
+				8C88EDFA4A114EC74AD7C802 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,13 +161,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926BF6831E656A98006BD556 /* 1.plist in Resources */,
 				923ABED11E60835700AD7572 /* LaunchScreen.storyboard in Resources */,
 				923ABECE1E60835700AD7572 /* Assets.xcassets in Resources */,
 				923ABECC1E60835700AD7572 /* Main.storyboard in Resources */,
+				926BF67F1E6569E9006BD556 /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69929A9F101757BF80BA18B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76C4F0A8A190EE5D9997BE13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C88EDFA4A114EC74AD7C802 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流/Pods-瀑布流-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		923ABEBF1E60835700AD7572 /* Sources */ = {
@@ -136,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				923ABEC91E60835700AD7572 /* ViewController.swift in Sources */,
+				926BF67E1E6569E9006BD556 /* ShopCell.swift in Sources */,
+				926BF6811E656A74006BD556 /* ShopItem.swift in Sources */,
 				923ABEC71E60835700AD7572 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +338,7 @@
 		};
 		923ABED61E60835700AD7572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B579A7FCF4A92194D60D15CD /* Pods-瀑布流.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "瀑布流/Info.plist";
@@ -258,6 +350,7 @@
 		};
 		923ABED71E60835700AD7572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9DFDB88F92906418A9E567 /* Pods-瀑布流.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "瀑布流/Info.plist";
@@ -286,6 +379,7 @@
 				923ABED71E60835700AD7572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

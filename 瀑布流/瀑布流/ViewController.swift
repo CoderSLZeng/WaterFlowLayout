@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import MJExtension
 
 class ViewController: UIViewController {
     
     // MARK: - 自定义基本属性
     let CELL = "CELL"
+    
+    /// 模型数组
+    var shops: NSMutableArray = {
+    
+        () -> NSMutableArray
+        in
+        
+        // 初始化数据
+        return ShopItem.mj_objectArrayWithFilename("1.plist")
+
+    }()
+    
     // MARK: - 系统初始化
     
     override func viewDidLoad() {
@@ -30,7 +43,8 @@ class ViewController: UIViewController {
         self.view.addSubview(collection)
         
         // 注册cell
-        collection.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: CELL)
+        let nib = UINib(nibName: "\(ShopCell.self)", bundle: nil)
+        collection.registerNib(nib, forCellWithReuseIdentifier: CELL)
 
     }
 
@@ -42,14 +56,16 @@ extension ViewController: UICollectionViewDataSource
 {
     // 每组有多少个元素
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return self.shops.count
     }
     
     // 元素的属性
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CELL, forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.redColor()
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CELL, forIndexPath: indexPath) as! ShopCell
+        
+        // 设置获取的模型数组
+        cell.shop = (self.shops[indexPath.item] as! ShopItem)
         return cell
     }
 }
