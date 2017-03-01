@@ -10,8 +10,8 @@ import UIKit
 
 class ShopItem: NSObject {
     
-    var w: CGFloat?
-    var h: CGFloat?
+    var w: NSNumber?
+    var h: NSNumber?
     
     var img: String?
     var price: String?
