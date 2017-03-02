@@ -21,6 +21,7 @@ class ShopCell: UICollectionViewCell {
         didSet {
             guard let img = shop?.img else
             {
+                print("获取图片数据失败")
                 return
             }
             
@@ -28,6 +29,7 @@ class ShopCell: UICollectionViewCell {
             
             guard let price = shop?.price else
             {
+                print("获取价格数据失败")
                 return
             }
             
